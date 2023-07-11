@@ -179,3 +179,39 @@ function myFilter(collection, predicatecb)
 //printOneDArray(myfiltrarrvals, "myfiltrarrvals");
 //let myfiltrobjvals = myFilter({one: 1, three: 3, five: 5}, function(num){ return num % 2 == 0; });
 //printOneDArray(myfiltrobjvals, "myfiltrobjvals");//call fails for the moment
+
+function myFlatten(array, single, newArr=[])
+{
+    if (single == undefined || single == null) return myFlatten(array, false, newArr);
+    //else;//do nothing
+
+    if (array == undefined || array == null) return null;
+    else if (array.length < 1) return array;
+    else
+    {
+        for (let n = 0; n < array.length; n++)
+        {
+            if (Array.isArray(array[n]))
+            {
+                if (single)
+                {
+                    for (let k = 0; k < array[n].length; k++)
+                    {
+                        newArr.push(array[n][k]);
+                    }
+                }
+                else
+                {
+                    let mytemparr = myFlatten(array[n], single, []);
+                    for (let k = 0; k < mytemparr.length; k++) newArr.push(mytemparr[k]);
+                }
+            }
+            else newArr.push(array[n]);
+        }
+        return newArr;
+    }
+}
+let myflatterarrtstn = myFlatten([1, [2, 5], [3, [[4]]]]);
+printOneDArray(myflatterarrtstn, "myflatterarrtstn");
+let mylessflatarr = myFlatten([1, [2, 5], [3, [[4]]]], true);
+printOneDArray(mylessflatarr, "mylessflatarr");

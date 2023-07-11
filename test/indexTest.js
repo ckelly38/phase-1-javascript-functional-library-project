@@ -218,21 +218,21 @@ describe('index.js', function () {
 
   // })
 
-  // describe('myFlatten', function () {
+   describe('myFlatten', function () {
 
-  //   it('correctly flattens a ludicrously nested array', function () {
-  //     const nestedArr = [1, [2, 3], [[4, 5], 6, [7, [8, 9]]]]
-  //     const flatArr = myFlatten(nestedArr)
-  //     expect(arraysEqual(flatArr, [1, 2, 3, 4, 5, 6, 7, 8, 9])).to.equal(true)
-  //   })
+     it('correctly flattens a ludicrously nested array', function () {
+       const nestedArr = [1, [2, 3], [[4, 5], 6, [7, [8, 9]]]]
+       const flatArr = myFlatten(nestedArr)
+       expect(arraysEqual(flatArr, [1, 2, 3, 4, 5, 6, 7, 8, 9])).to.equal(true)
+     })
 
-  //   it('correctly flattens a single level when a second argument of "true" is passed', function () {
-  //     const nestedArr = [1, [2, 3], [[4, 5], 6, [7, [8, 9]]]]
-  //     const flatArr = myFlatten(nestedArr, true)
-  //     expect(arraysEqual(flatArr, [1, 2, 3, [4, 5], 6, [7, [8, 9]]])).to.equal(true)
-  //   })
+     it('correctly flattens a single level when a second argument of "true" is passed', function () {
+       const nestedArr = [1, [2, 3], [[4, 5], 6, [7, [8, 9]]]]
+       const flatArr = myFlatten(nestedArr, true)
+       expect(arraysEqual(flatArr, [1, 2, 3, [4, 5], 6, [7, [8, 9]]])).to.equal(true)
+     })
 
-  // })
+   })
 
   describe('myKeys', function () {
     const testObj = Object.assign({}, unmodifiedTestObj)

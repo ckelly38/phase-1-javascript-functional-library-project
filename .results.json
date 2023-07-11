@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 11,
-    "tests": 27,
-    "passes": 27,
+    "suites": 12,
+    "tests": 29,
+    "passes": 28,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-07-11T06:44:35.176Z",
-    "end": "2023-07-11T06:44:35.835Z",
-    "duration": 659
+    "failures": 1,
+    "start": "2023-07-11T07:17:38.062Z",
+    "end": "2023-07-11T07:17:38.689Z",
+    "duration": 627
   },
   "tests": [
     {
@@ -27,21 +27,21 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -76,7 +76,7 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -97,7 +97,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -118,7 +118,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -146,7 +146,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -172,6 +172,26 @@
       "err": {}
     },
     {
+      "title": "correctly flattens a ludicrously nested array",
+      "fullTitle": "index.js myFlatten correctly flattens a ludicrously nested array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly flattens a single level when a second argument of \"true\" is passed",
+      "fullTitle": "index.js myFlatten correctly flattens a single level when a second argument of \"true\" is passed",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/indexTest.js:232:75)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    },
+    {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
       "duration": 0,
@@ -181,14 +201,14 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -201,7 +221,21 @@
     }
   ],
   "pending": [],
-  "failures": [],
+  "failures": [
+    {
+      "title": "correctly flattens a single level when a second argument of \"true\" is passed",
+      "fullTitle": "index.js myFlatten correctly flattens a single level when a second argument of \"true\" is passed",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to equal true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/indexTest.js:232:75)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    }
+  ],
   "passes": [
     {
       "title": "calls alert with each element passed",
@@ -220,21 +254,21 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "successfully returns a correctly populated array",
       "fullTitle": "index.js myMap successfully returns a correctly populated array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myMap does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -269,7 +303,7 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -290,7 +324,7 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -311,7 +345,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -339,7 +373,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -365,6 +399,13 @@
       "err": {}
     },
     {
+      "title": "correctly flattens a ludicrously nested array",
+      "fullTitle": "index.js myFlatten correctly flattens a ludicrously nested array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
       "duration": 0,
@@ -374,14 +415,14 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
