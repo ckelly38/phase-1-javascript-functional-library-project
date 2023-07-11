@@ -211,7 +211,7 @@ function myFlatten(array, single, newArr=[])
         return newArr;
     }
 }
-let myflatterarrtstn = myFlatten([1, [2, 5], [3, [[4]]]]);
-printOneDArray(myflatterarrtstn, "myflatterarrtstn");
-let mylessflatarr = myFlatten([1, [2, 5], [3, [[4]]]], true);
-printOneDArray(mylessflatarr, "mylessflatarr");
+//let myflatterarrtstn = myFlatten([1, [2, 5], [3, [[4]]]]);
+//printOneDArray(myflatterarrtstn, "myflatterarrtstn");
+//let mylessflatarr = myFlatten([1, [2, 5], [3, [[4]]]], true);
+//printOneDArray(mylessflatarr, "mylessflatarr");
