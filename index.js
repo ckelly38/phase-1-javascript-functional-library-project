@@ -48,7 +48,11 @@ function myEach(collection, cb)
         for (let n = 0; n < mySize(collection); n++) cb(collection[n]);
         return collection;
     }
-    else return myEach(myValues(collection), cb);
+    else
+    {
+        let mychvals = myEach(myValues(collection), cb);
+        return collection;
+    }
 }
 //myEach([1, 2, 3], alert);
 //myEach({one: 1, two: 2, three: 3}, alert);//call fails for the moment
