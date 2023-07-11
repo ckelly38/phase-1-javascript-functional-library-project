@@ -215,3 +215,42 @@ function myFlatten(array, single, newArr=[])
 //printOneDArray(myflatterarrtstn, "myflatterarrtstn");
 //let mylessflatarr = myFlatten([1, [2, 5], [3, [[4]]]], true);
 //printOneDArray(mylessflatarr, "mylessflatarr");
+
+//function mySortBy(array, srtfn)
+//{
+//    if (array == undefined || array == null) return null;
+//    else if (array.length < 2) return array;
+//    else
+//    {
+//        if (srtfn == undefined || srtfn == null)
+//        {
+//            console.log("default sort will be used!");
+//            array.sort();
+//            return array;
+//        }
+//         else
+//         {
+//             console.log("the given function will be the comparator!");
+//             console.log("srtfn = " + srtfn);
+//             return array.sort(srtfn);
+//         }
+//     }
+// }
+// let mysrtnumarr = mySortBy([1, 2, 3, 4, 5, 6],
+//     function(a, b) {
+//         if (a < b) return -1;
+//         else if (a == b) return 0;
+//         else return 1;
+//     }
+// );
+// printOneDArray(mysrtnumarr, "mysrtnumarr");//[5, 4, 6, 3, 1, 2];
+// let mysrtedarr = mySortBy([1, 2, 3, 4, 5, 6], function(num){ return Math.sin(num) });
+// printOneDArray(mysrtedarr, "mysrtedarr");//[5, 4, 6, 3, 1, 2];
+// const stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
+// let mysrtedobjarr = mySortBy(stooges, function(stooge){ return stooge.name });
+// for (let n = 0; n < mysrtedobjarr.length; n++)
+// {
+//     printOneDArray(myValues(mysrtedobjarr[n]), "myvalsobjinobjarr");
+// }
+// printOneDArray(mysrtedobjarr, "mysrtedobjarr");
+//[{name: 'curly', age: 60}, {name: 'larry', age: 50}, {name: 'moe', age: 40}];
